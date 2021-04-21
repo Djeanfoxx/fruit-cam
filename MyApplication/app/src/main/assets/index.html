@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://app.norbida.net/_login/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="https://app.norbida.net/_login/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<!-- <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <img class="banner_text" src="https://app.norbida.net/images/logo_colorful_2x_jups.png" />
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="https://app.norbida.net"> 首页 </a>
+        </li>
+        <li>
+            <a href="https://app.norbida.net/about"> 关于财阜荟 </a>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 产品与服务 <span class="caret"></span></a>
+            <ul class="dropdown-menu ddwn">
+                <div class="square"></div>
+                <li><a href="https://app.norbida.net/business">商务咨询</a></li>
+                <li><a href="https://app.norbida.net/education">教育移民</a></li>
+                <li><a href="https://app.norbida.net/financial">金融科技</a></li>
+                <li><a href="https://app.norbida.net/real-estate">房地产板块</a></li>
+            </ul>
+        </li>
+        <li
+        class="active">
+            <a href="https://app.norbida.net/register">  立即入驻 </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<div class="main">
+    <img src="https://app.norbida.net/_login/img/fmsc1-tg-leftbottom.png" alt="" class="trigleimg trileftbottom">
+    <img src="https://app.norbida.net/_login/img/fmsc1-tg-leftmid.png" alt="" class="trigleimg trileftmid">
+    <img src="https://app.norbida.net/_login/img/fmsc1-tg-lefttop.png" alt="" class="trigleimg trilefttop">
+    <img src="https://app.norbida.net/_login/img/fmsc1-tg-rightbottom.png" alt="" class="trigleimg trirightbottom">
+    <img src="https://app.norbida.net/_login/img/fmsc1-tg-righttop.png" alt="" class="trigleimg tririghttop">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="pager-header">
+                    <div class="p-heading">
+                        <h1>一站式</h1>
+                        <h3>资产配置服务</h3>
+                        <h5>金融板块 • 咨询板块 • 房产板块 • 教育板块</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="pager-login">
+                    <div class="card card-blue" style="display: inline-block;text-align: left;">
+                        <div class="card-header">
+                            <div class="tab">
+                                <button class="tablinks active" onclick="openCity(event, 'login-password')">密码登录</button>
+                                <button class="tablinks" onclick="openCity(event, 'login-sms')">短信登录</button>
+                            </div>
+
+                            <div id="login-password" class="tabcontent" style="display: block">
+                                <form method="POST" action="https://app.norbida.net/login">
+                                    <input type="hidden" name="_token" value="rys4V7ZosXA62nManFkVNN0tjMzhNIkyLpnmf3u9">                                        <div class="input-container">
+
+                                    <input class="input-field" placeholder="手机号码" name="email" required type="text">
+                                    <i class="fas fa-user-circle fa-2x icon-l"></i>
+                                </div>
+                                    <div class="input-container">
+
+                                        <input class="input-field" placeholder="密码" name="password" maxlength="30" required type="password">
+                                        <i class="fas fa-lock fa-2x icon-l"></i>
+                                    </div>
+                                    <a href="https://app.norbida.net/register" style="float:left">立即入驻</a>
+                                    <a href="https://app.norbida.net/password/reset" style="float:right">忘记密码</a>
+                                    <div id="snackbar"><div id="err-msg"></div></div>
+                                    <a href="https://app.norbida.net/login" class="btn">登录</a>
+
+                                </form>
+                            </div>
+
+                            <div id="login-sms" class="tabcontent">
+                                <form action="https://app.norbida.net/loginViaSMS" method="post">
+                                    <input type="hidden" name="_token" value="rys4V7ZosXA62nManFkVNN0tjMzhNIkyLpnmf3u9">                                        <div class="input-container">
+                                    <input class="input-field" placeholder="手机号码" name="sms_no" required="" type="text">
+                                    <i class="fas fa-user-circle fa-2x icon-l"></i>
+                                </div>
+                                    <div class="input-container">
+
+                                        <input style="width:70%;margin-right:10px;margin-left: 0px;" class="input-field" placeholder="验证码" name="verify_code" required="" type="text">
+                                        <input id="verify_code" style="border: 0;box-shadow: none; width:30%" type="button" class="icon-btn" value="获取验证码">
+                                    </div>
+                                    <a href="https://app.norbida.net/register" style="float:left">立即入驻</a>
+                                    <a href="https://app.norbida.net/password/reset" style="float:right">忘记密码</a>
+                                    <a href="https://app.norbida.net/login" class="btn">登录</a>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-bs">
+    <div class="row">
+        <div class="col-md-6 footer-icon animated fadeInUp">
+            <ul class="text-right" id="menu">
+                <div class="social-list">
+                    <li class="linked">
+                        <i class="fas fa-link fa-lg"></i>
+                        <p>微信小程序</p>
+                        <span class="tooltiptext">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Qr-3.png"/>
+                                <br>微博扫一扫
+                            </span>
+                    </li>
+                    <li class="weixin">
+                        <i class="fab fa-weixin fa-lg"></i>
+                        <p>关注微信公众号</p>
+                        <span class="tooltiptext">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Qr-3.png"/>
+                                <br>微信扫一扫
+                            </span>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="col-md-6 footer-social animated fadeInDown">
+            <ul style="padding-top: 10px;">
+                <li><a href="#"> </a></li> <br>
+                <!-- 官方客服 -->
+                <li><a href="#">联系电话： 0755-22216550</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<section style="text-align:center; margin:10px auto;"><p>财阜金融集团有限公司版权所有 © 2017-2018 ICP证粤B1-20180428 丨 关于财阜荟 丨 隐私政策</p></section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://app.norbida.net/_login/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://app.norbida.net/_login/js/bootstrap.min.js"></script>
+<script>
+        $('li.dropdown').hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        )
+    </script>
+<script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // $('input[type="email"]').on('focus', function() {
+        //     $('.icon-l').addClass('focused');
+        // });
+
+        // $('input[type="email"]').off('focus', function() {
+        //     $('.icon-l').removeClass('focused');
+        // });
+    </script>
+<script>
+        var x, i, j, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("input-select");
+        for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 0; j < selElmnt.length; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    for (k = 0; k < y.length; k++) {
+                    y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+            arrNo.push(i)
+            } else {
+            y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
+            }
+        }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+    </script>
+</html>
+
